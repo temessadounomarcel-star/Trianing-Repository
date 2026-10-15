@@ -29,9 +29,36 @@ git config --global --list
 # Initié git sur votre dépot actuel
  > git init
 
- # Vérifier la branche sur laquelle on se trouvre (main ou master au debut)
+# Vérifier la branche sur laquelle on se trouvre (main ou master au debut)
 
  > git branch --show-current
 
- # Ajouter un nouveau fichier Readme.md et voir
- > git add README.md
+# Ajouter un nouveau fichier Readme.md ( Ce fichier doit au préalabre etre créer dans le depot courant)
+# Toujours vérifier avec git status
+ > git add Readme.md
+
+# Créer un commmit, il enregistre dans l'historique local
+> git commit -m "Le document Readme.md est bien ajouté"
+
+# Il faut se rendre compte de la réalité, voir les logs
+
+> git log --oneline
+
+
+
+# Maintenant on va faire le push
+
+# Dabord, vérifier le dépot présent, s'il n'est pas lié à un depot distant
+> git remote -v
+
+# si n'y a pas de depot github associé, il faut le créer et prendre ce lien qu'on propose
+ > git remote add origin https://github.com/temessadounomarcel-star/Trianing-Repository.git
+
+# Vérifier la branche sur laquelle vous vous trouver 
+> git branch
+
+# Renomer la branche si vous voulez bien 
+> git branch -M NouveauNom
+
+# faire le push sur cette branche
+>  git push origin main
