@@ -62,3 +62,20 @@ git config --global --list
 
 # faire le push sur cette branche
 >  git push origin main
+
+Commande	Signification
+>git push	                            # Envoie les commits de la branche suivie
+>git push -u origin main	            # Publie main et configure son suivi
+>git push origin main	                # Envoie la branche locale main vers origin/main
+>git push --all origin	                # Envoie toutes les branches locales
+>git push --tags	                    # Envoie les tags locaux vers le dépôt distant
+
+
+# C'esr une nouvelle branche et faire le push dessus
+> git branch "Nouvelle_branch"       # sans deplacement dessus
+
+# migré vers une nouvelle branche
+> git switch "Nouvelle_branch"
+
+# Créer et switcher sur une branche en même temp
+> git switch -c "New_Branch"
