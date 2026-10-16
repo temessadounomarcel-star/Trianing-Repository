@@ -60,5 +60,20 @@ git config --global --list
 # Renomer la branche si vous voulez bien 
 > git branch -M NouveauNom
 
-# faire le push sur cette branche
->  git push origin main
+# faire le push sur cette branche : si -u la prochaine fois sur cette branch faire juste  git push 
+>  git push -u origin main
+
+# Vérifier que les branches on été envoyé
+ > git branch -a
+
+ # faire le merge sur la branch main
+
+ > git switch main
+ > git merge "branch_Name"
+
+ # Une fois le travail fusionné, on peux supprimer la branche
+
+ > git branch -d "Branch_Name"
+
+ 
+
